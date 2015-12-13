@@ -165,3 +165,29 @@ fs.readdir('/usr/',function(err,files){
 
 ```
 
+
+
+
+### node URL
+
+- parse
+parse函数的作用是解析url，返回一个json格式的数组
+
+```js
+var url = require('url');
+url.parse('http://www.baidu.com');
+
+{ protocol: 'http:',
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: null,
+  query: null,
+  pathname: 'www.baidu.com',
+  path: 'www.baidu.com',
+  href: 'http://www.baidu.com' }
+
+```
